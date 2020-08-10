@@ -1,0 +1,18 @@
+title: '--►  I search code''s teacher  ◄--'
+description: >-
+  Hello , I am interested to find a "teacher" in preference who speak french to
+  learn java , htlm , c ... code please contact me
+template:
+  repo: '-i-search-code''s-teacher--template'
+  name: '-i-search-code''s-teacher-'
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
